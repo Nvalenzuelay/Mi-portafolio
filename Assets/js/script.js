@@ -14,6 +14,8 @@ $(function(){
     }
   });
 
+  $('.carousel').carousel()
+
  $('[data-toggle="popover"]').popover();
 
   });
