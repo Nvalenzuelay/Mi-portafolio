@@ -26,6 +26,7 @@
 
     <!-- barra de navegación-->
     <nav class="background navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
         <a class="navbar-brand" href="#">N</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,41 +34,40 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Sobre mi <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="#sobremi">Sobre mi <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experiencia</a>
+              <a class="nav-link text-white" href="#experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Trabajos</a>
+              <a class="nav-link text-white" href="#trabajos">Trabajos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Contacto</a>
+              <a class="nav-link text-white" href="#contacto" >Contacto</a>
             </li>
           </ul>
         </div>
+      </div>
       </nav>
 
       <!-- header -->
       <header class="nicole text-center my-5">
           <div class="miblog container">
-              <h1>YO SOY</h1>
-              <hr style="width: 30%; background-color: aliceblue;">
-              <h1>NICOLE</h1>
+              <h1 class="display-4">YO SOY NICOLE <i class="fas fa-flower-daffodil fa-2x"></i></h1>
           </div>
       </header>
 
       <!-- descripcion -->
-      <section class="container">
-          <h2 class="text-center">SOBRE MI</h2>
-          <hr style="width: 20%; background-color: #373A3C;">
-          <div class="container">
+      <section id="sobremi" class="container d-none d-sm-block d-sm-none d-md-block">
+          <h2 class="text-center display-4">SOBRE MI</h2>
+          <hr style="width: 30%; background-color: #373A3C;">
+          <div class="container mb-5">
               <div class="row mt-5">
-                  <div class="col-6">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque illum porro error tempore nemo labore molestias debitis nostrum, ducimus eaque inventore animi possimus obcaecati quibusdam provident consequatur sit sapiente perferendis!</p>
+                  <div class="col-6 aboutme">
+                    <p> Hola! mi nombre es Nicole Estefanía Valenzuela Yañez, tengo 25 años, nací en la ciudad de Yumbel, una pequeña comuna de la región del bío bío, mis estudios basicos y medios los realice ahí, pero al momento de ingresar a la universidad decidí irme a Santiago, en donde estudié Ingeniería Civil Industrial y gracias a mi tesis realizada en Banco de Chile conseguí trabajo con una empresa de desarrollos web. </p>
                   </div>
-                  <div class="col-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestias reiciendis obcaecati in consequuntur labore iure animi illo fugiat alias inventore unde quidem aliquam iusto? Rerum quae dolor nemo quam?</p>
+                  <div class="col-6 aboutme">
+                    <p>Cuento con 3 años de experiencia en área TI, de los cuales 2 años me he desempeñado como Jefe de proyectos, teniendo la labor de planificación, ejecución e implementación de proyectos, además del diseño de las maquetas de los servicios que se desarrollan. Actualmente me encuentro estudiando la carrera de Diseño UX/UI en Desafío Latam, con lo cual espero potenciar mi trabajo</p>
                   </div>
               </div>
           </div>
@@ -75,8 +75,9 @@
       </section>
 
       <!-- mi experiencia -->
-      <section class="container">
-          <h2>MI EXPERIENCIA</h2>
+      <section id="experiencia" class="container">
+          <h2 class="display-4 text-center">MI EXPERIENCIA</h2>
+          <hr style="width: 20%; background-color: #373A3C;">
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -88,22 +89,22 @@
                   <div class="carousel-item active">
                     <img src="Assets/img/proyectos.png" class="d-block w-100" alt="..." style="align-items: center;">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Jefe de proyectos TI</h5>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      <h5 class="text-dark">Jefe de proyectos TI</h5>
+                      <p class="text-dark">2018-2020</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="Assets/img/controlgestion.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Analista control de gestión</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <h5 class="text-dark">Analista control de gestión</h5>
+                      <p class="text-dark">2018/03 - 2018/07</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="Assets/img/diseño.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Diseño de aplicaciones web</h5>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      <h5 class="text-dark">Diseño de aplicaciones web</h5>
+                      <p class="text-dark">2017-2018</p>
                     </div>
                   </div>
                 </div>
@@ -120,9 +121,9 @@
       </section>
 
       <!-- mis trabajos -->
-      <section class="container-fluid background">
-          <h2>MIS ÚLTIMOS TRABAJOS</h2>
-          <hr>
+      <section id="trabajos" class="container-fluid background">
+          <h2 class="text-center display-4 pt-5 text-white">MIS ÚLTIMOS TRABAJOS</h2>
+          <hr style="width: 20%; background-color: white;">
         <div class="container">
             <div class="card-deck">
                 <div class="card">
@@ -181,7 +182,9 @@
       </section>
 
       <!-- contacto -->
-      <section class="container">
+      <section id="contacto" class="container">
+        <h1>CONTACTO</h1>
+        <hr>
         <div class="typeform-widget" data-url="https://form.typeform.com/to/Zb3oZTI1?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
       </section>
 
